@@ -1,3 +1,6 @@
+var papel = "papel";
+var piedra = "piedra";
+var tijera = "tijera";
 
 juego(papel);
 function juego(opc) {
