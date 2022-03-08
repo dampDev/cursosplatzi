@@ -95,3 +95,20 @@ function calcularAreaCuadrado(){
     const area = areaCuadrado(value);
     alert(area);
 }
+//diametro del circulo 
+function calcularDiametroCirculo(){
+    const input = document.getElementById("inputCirculo");
+    const value = input.value;
+
+    const diametro = diametroCirculo(value);
+    alert(diametro);
+}
+
+function calcularCircunferenciaCirculo(){
+    const input = document.getElementById("inputCirculo")
+    const value = input.value;
+
+    const circunferencia = circunferenciaCirculo(value);
+    alert(circunferencia);
+}
+
