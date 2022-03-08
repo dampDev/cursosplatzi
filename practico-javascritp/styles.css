@@ -11,4 +11,53 @@
 body {
     margin: 0;
     font-family: 'Quicksand', sans-serif;
+    background: lightcyan;
+}
+.header {
+    background-image: url(./images/fondo-geometria.jpg);
+}
+.formCuadrado {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.form-container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.label {
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 4px;
+    text-align: center;
+}
+input {
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 32px;
+    font-size: var(--md);
+    padding: 6px;
+    
+    margin-bottom: 22px;
+}
+.primary-button {
+    background-color: var(--hospital-green);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+            height: 50px;
+            margin-top: 1px;
+            margin-bottom: 20px;
+
 }

@@ -11,23 +11,24 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-   <header>
+   
+   <div class="formCuadrado">
     <h1>Figuras Geometricas</h1>
     <p>curso Practico JavaScritp</p>
-   </header> 
-   
-<section>
-    <h2>Calcula el area y perimetro de un cuadrado</h2>
-    <form action="">
-<label for="inputCuadrado">
-    escribe cuanto mide cada lado del tu cuadrado
-</label>
-    <input id="inputCuadrado"type="number">
-    <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perimetro</button>
-    <button type="button" onclick="calcularAreaCuadrado()">Calcular Area</button>
+    <section class="form-container">
+        <h2>Calcula el area y perimetro de un cuadrado</h2>
+        <form action="" class="form">
+    <label for="inputCuadrado" class="label">
+        escribe cuanto mide cada lado del tu cuadrado
+    </label>
+        <input id="inputCuadrado"type="number" class="input">
+        <button type="button" onclick="calcularPerimetroCuadrado()" class="primary-button">Calcular el perimetro</button>
+        <button type="button" onclick="calcularAreaCuadrado()" class="primary-button">Calcular Area</button>
+    
+        </form>
+    </section>
+   </div>
 
-    </form>
-</section>
 
     <script src="./figuras.js"></script>
 </body>
