@@ -119,3 +119,11 @@ function calcularAreaCirculo(){
     const area = areaCirculo(value);
     alert(area);
 }
+
+// calculo triangulo.
+
+function calcularPerimetroTriangulo() {
+    const input1 = document.getElementById("inputTriangulo1")
+    
+    
+}
