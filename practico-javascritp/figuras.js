@@ -105,10 +105,17 @@ function calcularDiametroCirculo(){
 }
 
 function calcularCircunferenciaCirculo(){
-    const input = document.getElementById("inputCirculo")
+    const input = document.getElementById("inputCirculo");
     const value = input.value;
 
     const circunferencia = circunferenciaCirculo(value);
     alert(circunferencia);
 }
 
+function calcularAreaCirculo(){
+    const input = document.getElementById("inputCirculo");
+    const value = input.value;
+
+    const area = areaCirculo(value);
+    alert(area);
+}
