@@ -3,7 +3,7 @@ console.group("Cuadrado");
 //console.log("los lados del cuadrados miden "+ ladoCuadrado + "cm.");
 
 //perimetro del caudrado.
-
+    
 function perimetroCuadrado(lado){
     return lado * 4;
 }
@@ -44,6 +44,26 @@ function areaTriangulo(base,altura){
 //console.log("el area del triangulo es: "+areaTriangulo+"cm2");
 
 
+// altura de triangulo isosceles
+
+function alturaTriangulo(lado1,lado2,base){
+    if (lado1 == lado2) {
+        
+        lado1=Math.pow(lado1,2);
+        base=base/2;
+        base=Math.pow(base,2);
+        lado1=lado1-base;
+        h=Math.sqrt(lado1);
+
+        console.log(h);
+        return h;
+        }
+    else{
+        alert("No es un triangulo isosceles");
+    }
+    
+}
+
 console.groupEnd();
 
 //Circulo
@@ -77,6 +97,8 @@ function areaCirculo (radio){
 
 
 console.groupEnd();
+
+
 
 //interaccion con html
 
@@ -141,4 +163,49 @@ function calcularPerimetroTriangulo() {
 function calcularAreaTriangulo(){
     const input3 = document.getElementById("inputTriangulo3").value;
     
+}
+
+function calcularAlturaTriangulo(){
+    const input1 = document.getElementById("inputTriangulo1").value;
+    const input2 = document.getElementById("inputTriangulo2").value;
+    const input3 = document.getElementById("inputTriangulo3").value;
+
+    var value1 = parseInt (input1);
+    var value2 = parseInt (input2);
+    var value3 = parseInt (input3);
+    
+    const altura = alturaTriangulo(value1,value2,value3);
+
+    if (altura==undefined) {
+        console.log("no es isosceles");
+    }
+    else {
+        alert("La Altura del Triangulo isosceles es: "+altura);
+    }
+    
+
+}
+
+function calcularAreaTriangulo(){
+    const input1 = document.getElementById("inputTriangulo1").value;
+    const input2 = document.getElementById("inputTriangulo2").value;
+    const input3 = document.getElementById("inputTriangulo3").value;
+
+    var value1 = parseInt (input1);
+    var value2 = parseInt (input2);
+    var value3 = parseInt (input3);
+
+    value1=Math.pow(value1,2);
+        base=value3/2;
+        base=Math.pow(base,2);
+        value1=value1-base;
+        altura=Math.sqrt(value1);
+        
+
+    const area = areaTriangulo(value3,altura);
+    alert("El area del Triangulo es: "+area);
+
+
+
+
 }
