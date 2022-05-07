@@ -1,0 +1,11 @@
+.container {
+    border: 5px solid red;
+    background-color: azure;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+}
+
+.item {
+    border: 5px solid blue;
+    font-size: 2rem;
+}

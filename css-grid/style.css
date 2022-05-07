@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container{
+    width: 100%;
+    height: 600px;
+    border: 5px solid red;
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 150px 200px;
+    place-content: center;
+    gap: 5px;
+
+
+}
+
+.item {
+    
+    border: 5px solid blue;
+    font-size: 5rem;
+    place-self: end;
+}
